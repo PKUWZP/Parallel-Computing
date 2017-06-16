@@ -1,0 +1,12 @@
+#!/bin/bash
+#PBS -N comp_422_openmp
+#PBS -q serial
+#PBS -l nodes=1:ppn=32,walltime=24:00:00
+#PBS -M zw12@rice.edu
+#PBS -m abe
+#PBS -V
+echo "My job ran on:"
+cat $PBS_NODEFILE
+cd $PBS_O_WORKDIR
+ulimit -c unlimited
+numactl --physcpubind=0,4,8,12,16,20,24,28,32,36,40,44,48,52,56,60,64,68,72,76,80,84,88,92,96,100,104,108,112,116,120,124 --localalloc ./main 32
