@@ -6,3 +6,5 @@ If you have any question, feel free to reach out to the author (Zhipeng Wang, zh
 The repository contains 4 modules: 
 
 1. Parallelization of Othello program written in Cilk++ 
+
+2. Using OpenMP to parallelize Linear Equation solver by Gaussian Elimination and back substitutions. 
