@@ -8,3 +8,7 @@ The repository contains 4 modules:
 1. Parallelization of Othello program written in Cilk++ 
 
 2. Using OpenMP to parallelize Linear Equation solver by Gaussian Elimination and back substitutions. 
+
+3. Employing MPI for parallel solving matrix product problems using 2.5D matrix multiplication algorithms
+
+4. Implementation of parallel bitonic sorting algorithms using CUDA programming. 
